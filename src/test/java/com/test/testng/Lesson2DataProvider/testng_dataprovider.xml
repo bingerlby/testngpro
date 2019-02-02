@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+    <test name="TestDataProvider">
+        <parameter name="sql" value="select * from dataprovider where project_name='Test_TestNG'"/>
+        <classes>
+            <class name="com.test.testng.Lesson2DataProvider.DataProviderTest"/>
+            <class name="com.test.testng.Lesson2DataProvider.DBDataProviderTest"/>
+            <class name="com.test.testng.Lesson2DataProvider.ExcelDataProviderTest"/>
+            <class name="com.test.testng.Lesson2DataProvider.ConfDataProviderTest"/>
+        </classes>
+    </test>
+</suite>
